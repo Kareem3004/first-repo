@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="ISO-8859-1">
-		<title>Kodbook</title>
+		<meta charset="UTF-8">
+		<title>KodBook</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/styles.css}">
 	</head>
 	<body>
-		<h2>Welcome to Kodbook!</h2>
+		<h1>KodBook</h1>
+		<h2>#1 Social media app!</h2>
 		<hr>
 		<form action="/login" method="post">
-			<label>Username:</label>
-			<input type="text" name="username"><br><br>
-			<label>Password:</label>
-			<input type="password" name="password"><br><br>
+			<label>USERNAME : </label>
+			<input type = "text" name = "username">
+			<br><br>
 			
-			<input type="submit" value="LOGIN"><br><br>
+			<label>PASSWORD : </label>
+			<input type = "password" name = "password">
+			<br><br>
+			
+			<input type="submit" value = "LOGIN">
 			<hr>
-			<a href="/openResetPassword">Forgot Password?</a>
-			<a href="/openSignUp">create new account</a>
-			
-			
-		
+			<a href = "/openResetPassword">Forgot password?</a>
+			<a href = "/openSignUp">Create new account</a>
 		</form>
 	</body>
 </html>
